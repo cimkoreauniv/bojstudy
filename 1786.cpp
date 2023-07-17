@@ -1,3 +1,6 @@
+// 1786
+// string search using KMP
+
 #include <stdio.h>
 #include <string.h>
 #include <vector>
