@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define INF 1000000000
 
 int dist[510];
 
@@ -22,7 +21,7 @@ int main(void)
         for (; i < M * 2 + W; i++)
             scanf("%d %d %d", &from[i], &to[i], &t[i]), t[i] = -t[i];
         for (int i = 1; i <= N; i++)
-            dist[i] = INF;
+            dist[i] = 0;
         for (int i = 0; i < N - 1; i++)
             for (int e = 0; e < M * 2 + W; e++)
                 if (dist[to[e]] > dist[from[e]] + t[e])
