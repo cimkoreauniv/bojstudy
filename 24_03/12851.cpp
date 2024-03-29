@@ -18,7 +18,7 @@ int main(void)
     {
         int now = q.front();
         q.pop();
-        if (vis[K].cnt > 0 && vis[now].time > vis[K].time)
+        if (vis[K].cnt > 0 && vis[now].time >= vis[K].time)
             break;
         int nowtime = vis[now].time, nowcnt = vis[now].cnt;
         int targets[] = {now - 1, now + 1, now * 2};
