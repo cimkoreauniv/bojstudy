@@ -41,7 +41,6 @@ int main(void)
         int nowx = 1, nowy = cond_row - 1;
         while (k < 4)
         {
-            // printf("%d %d\n", nowx, nowy);
             if (k == 2 && nowy == cond_row)
                 k++;
             else if (board[nowy + dy[k]][nowx + dx[k]] == -1)
@@ -69,13 +68,6 @@ int main(void)
             }
         }
         board[cond_row + 1][2] = 0;
-        // printf("T: %d\n", t);
-        // for (int i = 1; i <= R; i++)
-        // {
-        //     for (int j = 1; j <= C; j++)
-        //         printf("%2d ", board[i][j]);
-        //     printf("\n");
-        // }
     }
     int ans = 0;
     for (int i = 1; i <= R; i++)
